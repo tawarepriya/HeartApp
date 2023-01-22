@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+</head>
+
+<body style="background-color: rgba(225, 213, 219, 0.762);">
+
+    <h1> Heart Disease Prediction </h1>
+    <form method="GET" action="/predict_disease">
+
+        <label>Age:</label>
+        <input type = "text" name = "age">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Sex:</label>
+        <label>Male:</label> <input type = "radio" name= "sex" value = "male">
+        <label>female:</label> <input type = "radio" name= "sex" value = "female">
+
+        <br>
+        <br>
+
+        <label>CP:</label>
+        <select name = "cp">
+            <option value = "typical angina">typical angina</option>
+            <option value = "atypical angina">atypical angina</option>
+            <option value = "non-anginal pain">non-anginal pain</option>
+            <option value = "asymptomatic">asymptomatic</option>
+        </select>
+        <br>
+        <br>
+
+        <label>Trestbps:</label>
+        <input type = "text" name = "trestbps">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Chol:</label>
+        <input type = "text" name = "chol">
+        </select>
+
+        <br>
+        <br>
+
+        <label>FBS:</label>
+        <label>Lower:</label> <input type = "radio" name= "fbs" value = "lower">
+        <label>Higher:</label> <input type = "radio" name= "fbs" value = "higher">
+
+        <br>
+        <br>
+
+        <label>Restecg:</label>
+        <label>Normal:</label> <input type = "radio" name= "restecg" value = "normal">
+        <label>Abnormal:</label> <input type = "radio" name= "restecg" value = "abnormal">
+        <label>hyper:</label> <input type = "radio" name= "restecg" value = "hyper">
+
+
+        <br>
+        <br>
+
+
+        <label>Thalach:</label>
+        <input type = "text" name = "thalach">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Exang:</label>
+        <label>No:</label> <input type = "radio" name= "exang" value = "no">
+        <label>yes:</label> <input type = "radio" name= "exang" value = "yes">
+
+        <br>
+        <br>
+
+        <label>Oldpeak:</label>
+        <input type = "text" name = "oldpeak">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Slope:</label>
+        <label>Up:</label> <input type = "radio" name= "slope" value = "up">
+        <label>Flat:</label> <input type = "radio" name= "slope" value = "flat">
+        <label>Down:</label> <input type = "radio" name= "slope" value = "down">
+
+        <br>
+        <br>
+
+        <label>CA:</label>
+        <label>0:</label> <input type = "radio" name= "ca" value = "0">
+        <label>1:</label> <input type = "radio" name= "ca" value = "1">
+        <label>2:</label> <input type = "radio" name= "ca" value = "2">
+        <label>3:</label> <input type = "radio" name= "ca" value = "3">
+        <br>
+        <br>
+
+
+
+        <label>Thal:</label>
+        <select name = "thal">
+            <option value = "normal">Normal</option>
+            <option value = "fixed defect">Fixed defect</option>
+            <option value = "reversable defect">Reversable defect</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p><b> {{ prediction }} </b> </p>
+
+    </form>
+
+
+</body>
+</html>
